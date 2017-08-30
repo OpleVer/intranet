@@ -91,11 +91,10 @@
 
             </div>
             <div class="loginbox-or">
-                <div class="or-line"></div>
-                <div class="or">OR</div>
+
             </div>
             <div class="loginbox-textbox">
-              <input id="email" type="email" class="form-control" name="email" value="{{ old('email') }}" required autofocus>
+              <input id="email" type="email" class="form-control" name="email" value="{{ old('email') }}" placeholder="email" required autofocus>
               @if ($errors->has('email'))
                   <span class="help-block">
                       <strong>{{ $errors->first('email') }}</strong>
@@ -103,7 +102,7 @@
               @endif
             </div>
             <div class="loginbox-textbox">
-                  <input id="password" type="password" class="form-control" name="password" required>
+                  <input id="password" type="password" class="form-control" name="password" placeholder="password"required>
                   @if ($errors->has('password'))
                       <span class="help-block">
                           <strong>{{ $errors->first('password') }}</strong>
@@ -116,9 +115,7 @@
             <div class="loginbox-submit">
                 <input type="submit" class="btn btn-primary btn-block" value="Login">
             </div>
-            <div class="loginbox-signup">
-                <a href="register.html">Sign Up With Email</a>
-            </div>
+          
         </div>
       </form>
         <div class="logobox">
