@@ -23,3 +23,6 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/directorio', function () {
     return view('directorio');
 });
+Route::get('/calendario', function () {
+    return view('calendario');
+});
